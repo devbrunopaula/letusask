@@ -1,46 +1,181 @@
-# Getting Started with Create React App
+[![LinkedIn][linkedin-shield]][linkedin-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
 
-In the project directory, you can run:
+  <a href="https://brunopaula.com/">
+    <img src="https://github.com/devbrunopaula/pomobreak/raw/main/github/images/bruno.jpg" alt="Logo"  >
+  </a>
 
-### `yarn start`
+  <h3 align="center">LetUsAsk</h3>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+  <p align="center">
+   LetUsAsk is an easy to use Q&A and polling platform. It helps people to get the most out of meetings and events by bridging the gap between speakers and their audiences.
+    <br />
+    <a href="https://github.com/devbrunopaula/letusask"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://letusask.netlify.app/">View Demo</a>
+    ·
+    <a href="https://github.com/devbrunopaula/letusask/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/devbrunopaula/letusask/issues">Request Feature</a>
+  </p>
+</p>
+<br>
+<div align=center>
+  <img src="https://user-images.githubusercontent.com/10413679/133941977-d31c6cf2-a9ae-4ce1-92d2-c33085bce5a6.png" alt="" />
+ 
+</div>
+<br>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<!-- TABLE OF CONTENTS -->
+<details open="open">
+  <summary><h2 style="display: inline-block">Table of Contents</h2></summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Let Us Ask</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgements">Acknowledgements</a></li>
+  </ol>
+</details>
 
-### `yarn test`
+<!-- ABOUT THE PROJECT -->
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## About The Project
 
-### `yarn build`
+<div>
+  <img src="https://user-images.githubusercontent.com/10413679/133942763-2f14ec06-5948-46b3-af12-6eb90dcc47a1.png" alt="" />
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
+### Built With
+- Front End [React w/ Typescript](https://reactjs.org/)
+- Back End [Google Firestore](https://firebase.google.com/)
+- Layout [Figma](https://www.figma.com/file/qFob2QY4xqco8MB3E3LhCn/Letmeask-Community?node-id=12504%3A1587)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<!-- GETTING STARTED -->
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Getting Started
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+To get a local copy up and running follow these simple steps.
 
-## Learn More
+### Prerequisites
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+This is an example of how to list things you need to use the software and how to install them.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- npm
+  ```sh
+  npm install npm@latest -g
+  ```
+  ```
+
+  ```
+
+### Installation
+
+1. Clone the repo
+   ```sh
+   git clone https://github.com/devbrunopaula/letusask.git
+   ```
+2. Install NPM packages
+   ```sh
+   npm install
+   ```
+   Install Yarm packages
+   ```sh
+   yarn add
+   ```
+
+<!-- USAGE EXAMPLES -->
+
+## Usage
+
+Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+
+_For more examples, please refer to the [Documentation](https://github.com/devbrunopaula/letusask/)_
+
+<!-- ROADMAP -->
+
+## Roadmap
+
+See the [open issues](https://github.com/devbrunopaula/letusask/issues) for a list of proposed features (and known issues).
+
+<!-- CONTRIBUTING -->
+
+## Contributing
+
+Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+<!-- LICENSE -->
+
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+<!-- CONTACT -->
+
+## Contact
+
+Bruno Paula - [@devbrunopaula](https://twitter.com/devbrunopaula) - devbrunopaula@gmail.com
+
+Project Link: [API LINK](https://letusask.netlify.app/)
+
+<!-- ACKNOWLEDGEMENTS -->
+
+## Acknowledgements
+
+- [React JS](https://reactjs.org)
+- [Google Cloud Firestore](https://firebase.google.com/)
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
+[contributors-shield]: https://img.shields.io/github/contributors/devbrunopaula/repo.svg?style=for-the-badge
+[my-shield]: https://img.shields.io/badge/dev-brunopaula-blue
+[contributors-url]: https://github.com/devbrunopaula/repo/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/devbrunopaula/repo.svg?style=for-the-badge
+[forks-url]: https://github.com/devbrunopaula/letusask/network/members
+[stars-shield]: https://img.shields.io/github/stars/devbrunopaula/repo.svg?style=for-the-badge
+[stars-url]: https://github.com/devbrunopaula/letusask/stargazers
+[issues-shield]: https://img.shields.io/github/issues/devbrunopaula/repo.svg?style=for-the-badge
+[issues-url]: https://github.com/devbrunopaula/repo/issues
+[license-shield]: https://img.shields.io/github/license/devbrunopaula/repo.svg?style=for-the-badge
+[license-url]: https://github.com/devbrunopaula/repo/blob/master/LICENSE.txt
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://www.linkedin.com/in/bruno-paula
+[product-screenshot]: ./screenshot.png
+[project-ad]: https://logos-world.net/wp-content/uploads/2020/04/Facebook-Logo.png
+[logo]: https://github.com/devbrunopaula/pomobreak/raw/main/github/images/bruno.jpg
+[openissues]: (https://img.shields.io/bitbucket/issues/devbrunopaula/quest-nextJs?style=for-the-badge)
+![project-logo](https://user-images.githubusercontent.com/10413679/133941977-d31c6cf2-a9ae-4ce1-92d2-c33085bce5a6.png)
+
+
