@@ -13,7 +13,7 @@ function Home() {
 						alt='Illustration questions and answers'
 					/>
 					<p className='text-white text-5xl mb-5 font-bold'>
-						All questions has <br /> an answer
+						Every question has <br /> an answer
 					</p>
 
 					<p className='text-gray-200 text-xl'>
