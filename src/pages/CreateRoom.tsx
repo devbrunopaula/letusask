@@ -1,12 +1,13 @@
 import illustrationImg from '../assets/images/illustration.svg'
 import logoImg from '../assets/images/Logo.png'
-import googleIconImg from '../assets/images/google-icon.svg'
+
 import {IoEnterOutline} from 'react-icons/io5'
 import Button from '../components/Button'
+import {Link} from 'react-router-dom'
 
-const Home = () => {
+const CreateRoom = () => {
 	return (
-		<div className=' flex min-h-screen'>
+		<div className='flex min-h-screen'>
 			<aside className='hidden  lg:flex-1 lg:bg-purple-500 lg:flex lg:justify-center lg:items-center lg:flex-col '>
 				<div>
 					<img
@@ -23,7 +24,8 @@ const Home = () => {
 					</p>
 				</div>
 			</aside>
-			<main className='flex-1 flex justify-center items-center flex-col'>
+			{/* Right Side */}
+			<main className='flex-1 flex justify-center items-center flex-col  '>
 				<div className='w-80'>
 					<div className='flex justify-center items-center'>
 						<img
@@ -32,56 +34,43 @@ const Home = () => {
 							alt='letUsAsl company logo'
 						/>
 					</div>
-					<div className='bg-red-500 flex px-9 py-5 rounded-xl'>
-						<img
-							className='pr-5'
-							src={googleIconImg}
-							alt='google icon'
-						/>
 
-						<Button className='text-white font-bold' type='submit'>
-							Create a room with Google
-						</Button>
-					</div>
-					{/* Enter to a room divider */}
-					<div className='relative my-10'>
-						<div
-							className='absolute inset-0 flex items-center'
-							aria-hidden='true'
-						>
-							<div className='w-full border-t border-gray-300' />
-						</div>
-						<div className='relative flex justify-center'>
-							<span className='px-3 text-gray-400 bg-white text-lg font-medium '>
-								or enter to a room
-							</span>
-						</div>
+					<div className='flex justify-center items-center mb-5 text-gray-800 text-2xl font-bold'>
+						<h1>Create a room</h1>
 					</div>
 
 					{/* enter code */}
 					<div>
 						<form>
-							<label htmlFor='code' className='sr-only'>
-								Email
+							<label htmlFor='create' className='sr-only'>
+								Room's Name
 							</label>
 							<input
 								type='text'
-								name='code'
-								id='code'
+								name='create'
+								id='create'
 								className='h-12 text-gray-600 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md'
-								placeholder='Type your room code'
+								placeholder='Room name'
 							/>
 						</form>
 					</div>
 					{/* Enter a Room Button */}
-					<div className='bg-purple-500 mt-10 flex justify-center px-9 py-5 rounded-xl'>
+					<div className='bg-purple-500 mt-8 flex justify-center px-9 py-5 rounded-xl'>
 						<IoEnterOutline
 							className='text-3xl mr-3 text-white'
 							aria-hidden='true'
 						/>
 						<Button className='text-white font-bold' type='submit'>
-							Enter a room
+							Create Room
 						</Button>
+					</div>
+					<div className='flex justify-center pt-3'>
+						<p className='text-lg mr-3 text-gray-800'>
+							Join a room
+							<span className='ml-1 text-pink-500 underline'>
+								<Link to='/join-room'>Click Here</Link>
+							</span>
+						</p>
 					</div>
 				</div>
 			</main>
@@ -89,4 +78,4 @@ const Home = () => {
 	)
 }
 
-export default Home
+export default CreateRoom
