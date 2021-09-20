@@ -2,6 +2,7 @@ import illustrationImg from '../assets/images/illustration.svg'
 import logoImg from '../assets/images/Logo.png'
 import googleIconImg from '../assets/images/google-icon.svg'
 import {IoEnterOutline} from 'react-icons/io5'
+import Button from '../components/Button'
 function Home() {
 	return (
 		<div className=' flex min-h-screen'>
@@ -36,9 +37,10 @@ function Home() {
 							src={googleIconImg}
 							alt='google icon'
 						/>
-						<button className='text-white font-bold'>
+
+						<Button className='text-white font-bold' type='submit'>
 							Create a room with Google
-						</button>
+						</Button>
 					</div>
 					{/* Enter to a room divider */}
 					<div className='relative my-10'>
@@ -76,9 +78,9 @@ function Home() {
 							className='text-3xl mr-3 text-white'
 							aria-hidden='true'
 						/>
-						<button className='text-white font-bold'>
+						<Button className='text-white font-bold' type='submit'>
 							Enter a room
-						</button>
+						</Button>
 					</div>
 				</div>
 			</main>
