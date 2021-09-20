@@ -57,16 +57,18 @@ function Home() {
 
 					{/* enter code */}
 					<div>
-						<label htmlFor='code' className='sr-only'>
-							Email
-						</label>
-						<input
-							type='text'
-							name='code'
-							id='code'
-							className='h-12 text-gray-600 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md'
-							placeholder='Type your room code'
-						/>
+						<form>
+							<label htmlFor='code' className='sr-only'>
+								Email
+							</label>
+							<input
+								type='text'
+								name='code'
+								id='code'
+								className='h-12 text-gray-600 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md'
+								placeholder='Type your room code'
+							/>
+						</form>
 					</div>
 					{/* Enter a Room Button */}
 					<div className='bg-purple-500 mt-10 flex justify-center px-9 py-5 rounded-xl'>
