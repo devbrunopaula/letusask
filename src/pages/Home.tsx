@@ -3,8 +3,14 @@ import logoImg from '../assets/images/Logo.png'
 import googleIconImg from '../assets/images/google-icon.svg'
 import {IoEnterOutline} from 'react-icons/io5'
 import Button from '../components/Button'
+import {useHistory} from 'react-router-dom'
 
 const Home = () => {
+	const history = useHistory()
+
+	const navigateToNewRoom = () => {
+		history.push('/rooms/new')
+	}
 	return (
 		<div className=' flex min-h-screen'>
 			<aside className='hidden  lg:flex-1 lg:bg-purple-500 lg:flex lg:justify-center lg:items-center lg:flex-col '>
@@ -39,7 +45,10 @@ const Home = () => {
 							alt='google icon'
 						/>
 
-						<Button className='text-white font-bold' type='submit'>
+						<Button
+							className='text-white font-bold'
+							onClick={navigateToNewRoom}
+						>
 							Create a room with Google
 						</Button>
 					</div>

@@ -68,7 +68,7 @@ const CreateRoom = () => {
 						<p className='text-lg mr-3 text-gray-800'>
 							Join a room
 							<span className='ml-1 text-pink-500 underline'>
-								<Link to='/join-room'>Click Here</Link>
+								<Link to='/'>Click Here</Link>
 							</span>
 						</p>
 					</div>
