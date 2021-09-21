@@ -5,12 +5,19 @@ import {IoEnterOutline} from 'react-icons/io5'
 import Button from '../components/Button'
 import {useHistory} from 'react-router-dom'
 
+import {useAuth} from '../hooks/useAuth'
+
 const Home = () => {
 	const history = useHistory()
+	const {user, signInWithGoogle} = useAuth()
 
-	const navigateToNewRoom = () => {
+	const handleCreateRoom = async () => {
+		if (!user) {
+			await signInWithGoogle()
+		}
 		history.push('/rooms/new')
 	}
+
 	return (
 		<div className=' flex min-h-screen'>
 			<aside className='hidden  lg:flex-1 lg:bg-purple-500 lg:flex lg:justify-center lg:items-center lg:flex-col '>
@@ -47,7 +54,7 @@ const Home = () => {
 
 						<Button
 							className='text-white font-bold'
-							onClick={navigateToNewRoom}
+							onClick={handleCreateRoom}
 						>
 							Create a room with Google
 						</Button>

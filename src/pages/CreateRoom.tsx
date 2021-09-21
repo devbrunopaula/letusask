@@ -4,8 +4,10 @@ import logoImg from '../assets/images/Logo.png'
 import {IoEnterOutline} from 'react-icons/io5'
 import Button from '../components/Button'
 import {Link} from 'react-router-dom'
+import {useAuth} from '../hooks/useAuth'
 
 const CreateRoom = () => {
+	const {user} = useAuth()
 	return (
 		<div className='flex min-h-screen'>
 			<aside className='hidden  lg:flex-1 lg:bg-purple-500 lg:flex lg:justify-center lg:items-center lg:flex-col '>
@@ -25,7 +27,7 @@ const CreateRoom = () => {
 				</div>
 			</aside>
 			{/* Right Side */}
-			<main className='flex-1 flex justify-center items-center flex-col  '>
+			<main className='flex-1 flex justify-center items-center flex-col'>
 				<div className='w-80'>
 					<div className='flex justify-center items-center'>
 						<img
@@ -34,7 +36,7 @@ const CreateRoom = () => {
 							alt='letUsAsl company logo'
 						/>
 					</div>
-
+					<h3>{user?.name}</h3>
 					<div className='flex justify-center items-center mb-5 text-gray-800 text-2xl font-bold'>
 						<h1>Create a room</h1>
 					</div>
