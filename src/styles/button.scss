@@ -1,0 +1,25 @@
+@import 'colors';
+
+.btn-room-box {
+	border: 1px solid $purple;
+	border-radius: 8px;
+	height: 40px;
+	width: 11rem;
+}
+
+.btn-left-icon {
+	background: $purple;
+	height: 100%;
+	width: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 8px 0 0 8px;
+	padding: 20px;
+	margin: 0;
+}
+
+.btn-room-name {
+	width: 100%;
+	padding: 0 10px;
+}

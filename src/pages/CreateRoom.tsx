@@ -1,5 +1,7 @@
+import {FormEvent, useState} from 'react'
 import illustrationImg from '../assets/images/illustration.svg'
 import logoImg from '../assets/images/Logo.png'
+import {database} from '../services/firebase'
 
 import {IoEnterOutline} from 'react-icons/io5'
 import Button from '../components/Button'
@@ -8,6 +10,22 @@ import {useAuth} from '../hooks/useAuth'
 
 const CreateRoom = () => {
 	const {user} = useAuth()
+	const [newRoom, setNewRoom] = useState('')
+
+	const handleCreateRoom = async (e: FormEvent) => {
+		e.preventDefault()
+		console.log(newRoom)
+
+		if (newRoom.trim() === '') {
+			return
+		}
+		const roomRef = database.ref('rooms')
+
+		await roomRef.push({
+			title: newRoom,
+			authorId: user?.id,
+		})
+	}
 	return (
 		<div className='flex min-h-screen'>
 			<aside className='hidden  lg:flex-1 lg:bg-purple-500 lg:flex lg:justify-center lg:items-center lg:flex-col '>
@@ -43,7 +61,7 @@ const CreateRoom = () => {
 
 					{/* enter code */}
 					<div>
-						<form>
+						<form onSubmit={handleCreateRoom}>
 							<label htmlFor='create' className='sr-only'>
 								Room's Name
 							</label>
@@ -53,18 +71,24 @@ const CreateRoom = () => {
 								id='create'
 								className='h-12 text-gray-600 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md'
 								placeholder='Room name'
+								onChange={e => setNewRoom(e.target.value)}
+								value={newRoom}
 							/>
+
+							{/* Enter a Room Button */}
+							<div className='bg-purple-500 mt-8 flex justify-center px-9 py-5 rounded-xl'>
+								<IoEnterOutline
+									className='text-3xl mr-3 text-white'
+									aria-hidden='true'
+								/>
+								<Button
+									className='text-white font-bold'
+									type='submit'
+								>
+									Create Room
+								</Button>
+							</div>
 						</form>
-					</div>
-					{/* Enter a Room Button */}
-					<div className='bg-purple-500 mt-8 flex justify-center px-9 py-5 rounded-xl'>
-						<IoEnterOutline
-							className='text-3xl mr-3 text-white'
-							aria-hidden='true'
-						/>
-						<Button className='text-white font-bold' type='submit'>
-							Create Room
-						</Button>
 					</div>
 					<div className='flex justify-center pt-3'>
 						<p className='text-lg mr-3 text-gray-800'>
