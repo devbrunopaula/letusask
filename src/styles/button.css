@@ -1,14 +1,14 @@
 @import 'colors';
 
 .btn-room-box {
-	border: 1px solid $purple;
+	border: 1px solid #835afd;
 	border-radius: 8px;
 	height: 40px;
 	width: 11rem;
 }
 
 .btn-left-icon {
-	background: $purple;
+	background: #835afd;
 	height: 100%;
 	width: 40px;
 	display: flex;

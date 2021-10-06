@@ -1,5 +1,5 @@
 import React from 'react'
-import '../styles/button.scss'
+import '../styles/button.css'
 import Logo from '../assets/images/Logo.png'
 import {DocumentDuplicateIcon} from '@heroicons/react/outline'
 type Props = {
