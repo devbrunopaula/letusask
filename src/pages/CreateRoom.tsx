@@ -5,12 +5,14 @@ import {database} from '../services/firebase'
 
 import {IoEnterOutline} from 'react-icons/io5'
 import Button from '../components/Button'
-import {Link} from 'react-router-dom'
+import {Link, useHistory} from 'react-router-dom'
 import {useAuth} from '../hooks/useAuth'
 
 const CreateRoom = () => {
 	const {user} = useAuth()
 	const [newRoom, setNewRoom] = useState('')
+
+	const history = useHistory()
 
 	const handleCreateRoom = async (e: FormEvent) => {
 		e.preventDefault()
@@ -21,10 +23,12 @@ const CreateRoom = () => {
 		}
 		const roomRef = database.ref('rooms')
 
-		await roomRef.push({
+		const firebaseRoom = await roomRef.push({
 			title: newRoom,
 			authorId: user?.id,
 		})
+
+		history.push(`/room/${firebaseRoom.key}`)
 	}
 	return (
 		<div className='flex min-h-screen'>
