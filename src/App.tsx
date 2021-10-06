@@ -12,9 +12,8 @@ function App() {
 			<AuthContextProvider>
 				<Switch>
 					<Route exact path='/rooms/new' component={CreateRoom} />
-					{/* <Route exact path='/rooms/:id' component={Room} /> */}
+					<DefaultLayout exact path='/room/:id' component={Room} />
 					<Route exact path='/' component={Home} />
-					<DefaultLayout exact path='/rooms/:id' component={Room} />
 				</Switch>
 			</AuthContextProvider>
 		</Router>
